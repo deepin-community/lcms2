@@ -1,3 +1,9 @@
+lcms2 (2.14-2deepin1) unstable; urgency=medium
+
+  * Security: CVE-2025-29070, fix heap buffer overflow in smooth2()
+
+ -- deepin-ci-robot <packages@deepin.org>  Wed, 29 Apr 2026 13:03:29 +0800
+
 lcms2 (2.14-2) unstable; urgency=medium
 
   * New patch: allow-to-read-portions-of-tag.diff.
