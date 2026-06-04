@@ -4,3 +4,4 @@ fix-memory-corruption-when-unregistering-plugins.diff
 manpages-cleanup.patch
 allow-to-read-portions-of-tag.diff
 cve-2025-29070-bound-check.patch
+CVE-2026-41254.patch
