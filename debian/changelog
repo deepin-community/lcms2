@@ -1,8 +1,47 @@
-lcms2 (2.14-2deepin1) unstable; urgency=medium
+lcms2 (2.16-2+deb13u2) trixie-security; urgency=medium
 
-  * Security: CVE-2025-29070, fix heap buffer overflow in smooth2()
+  * CVE-2026-42798 (Closes: #1135320)
 
- -- deepin-ci-robot <packages@deepin.org>  Wed, 29 Apr 2026 13:03:29 +0800
+ -- Moritz Mühlenhoff <jmm@debian.org>  Fri, 08 May 2026 00:01:34 +0200
+
+lcms2 (2.16-2+deb13u1) trixie-security; urgency=medium
+
+  * CVE-2026-41254 (Closes: #1134335)
+
+ -- Moritz Mühlenhoff <jmm@debian.org>  Thu, 30 Apr 2026 20:12:43 +0200
+
+lcms2 (2.16-2) unstable; urgency=medium
+
+  [ Florian Ernst ]
+  * Don't run the tests in parallel and grant them more time each
+    This allows tests to pass on slower architures
+  * Add metadata to debian/patches/manpages-cleanup.patch
+
+  [ Thomas Weber ]
+  * Upload to unstable (Closes: #1082514)
+  * Bump standards version to 4.7.0, no changes needed
+
+ -- Thomas Weber <tweber@debian.org>  Sun, 13 Oct 2024 13:49:12 +0200
+
+lcms2 (2.16-1) experimental; urgency=medium
+
+  * New upstream version 2.16
+    - Update symbols file for 2.16 release
+    - Update doc-base files for new 2.14 upstream version
+    - Remove patches (applied upstream):
+      - allow-to-read-portions-of-tag.diff
+      - fix-memory-corruption-when-unregistering-plugins.diff
+      - fix-regression-for-CMYK-colours.patch
+    - New patch: unbreak-API-compatibility.patch:
+      The patch reintroduces cmsGetToneCurveParams(), which was removed from
+      the public API without bumping the SONAME.
+    - Switch to Meson build system
+  * Build GPL3 plugins "threaded" and "fastfloat" (Closes: #1055502)
+  * Build and install static library files (Closes: #1038118)
+  * Run tests in the build directory and keep source directory clean
+    (Closes: #1045980)
+
+ -- Thomas Weber <tweber@debian.org>  Thu, 28 Dec 2023 18:53:33 +0100
 
 lcms2 (2.14-2) unstable; urgency=medium
 
