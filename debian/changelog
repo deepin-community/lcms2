@@ -1,3 +1,10 @@
+lcms2 (2.16-2+deb13u2deepin1) unstable; urgency=medium
+
+  * Restore deepin patches on top of 2.16-2+deb13u2
+    - cve-2025-29070-bound-check.patch: add bound checker for smooth2 to fix heap buffer overflow
+
+ -- lichenggang <lichenggang@deepin.org>  Fri, 17 Jul 2026 23:48:00 +0800
+
 lcms2 (2.16-2+deb13u2) trixie-security; urgency=medium
 
   * CVE-2026-42798 (Closes: #1135320)
@@ -199,7 +206,7 @@ lcms2 (2.7-1) unstable; urgency=medium
   * Use secure URLs for Version Control System repository
   * Bump Standards version to 3.9.7, no changes needed
   * New patch: dont-write-uninitialized-memory-for-color-strings.patch
-    Thanks to Jérémy Bobbio <lunar@debian.org> (Closes: 815248)
+    Thanks to Jer\'{e}my Bobbio <lunar@debian.org> (Closes: 815248)
   * Update maintainers field (Closes: 820138)
 
  -- Thomas Weber <tweber@debian.org>  Mon, 18 Apr 2016 15:53:10 +0200
