@@ -5,3 +5,4 @@ build-plugins-as-static-libraries-only.patch
 keep-src-tree-clean.patch
 CVE-2026-41254.patch
 CVE-2026-42798.patch
+cve-2025-29070-bound-check.patch
