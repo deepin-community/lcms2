@@ -1,3 +1,9 @@
+lcms2 (2.16-2+deb13u2deepin1) unstable; urgency=medium
+
+  * Backport CVE-2025-29070 bound check patch from master branch
+
+ -- lichenggang <lichenggang@uniontech.com>  Tue, 21 Jul 2026 21:13:20 +0800
+
 lcms2 (2.16-2+deb13u2) trixie-security; urgency=medium
 
   * CVE-2026-42798 (Closes: #1135320)
